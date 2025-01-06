@@ -4,12 +4,12 @@
 ## Portfolio
 
 ### Hello, I'm [Anushka Singh] 👋
-
-✨ Highlights
+<br>
+✨ Highlights<br>
 🌟 Fun Fact: When I’m not coding, you’ll find me exploring AR/VR realms or contributing to open-source projects!<br>
-🎯 Goal: Build tools that inspire collaboration, simplify processes, and solve real problems
+🎯 Goal: Build tools that inspire collaboration, simplify processes, and solve real problems <br>
 
-## 🛠️ Projects
+## 🛠️ Projects<br>
 ### 🏥 CareCompanion
 > Revolutionizing medical record management and nurse hiring for hospitals.  
 

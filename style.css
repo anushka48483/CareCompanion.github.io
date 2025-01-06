@@ -47,14 +47,15 @@ section {
   margin-bottom: 50px;
 }
 
-/* CareCompanion Section */
+/* CareCompanion Section with Light Blue Gradient */
 #CareCompanion {
   text-align: center;
   padding: 60px 20px;
-  background-image:url("https://www.seniorliving.org/app/uploads/2022/01/how-to-pay-for-companion-care.png")
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.8), rgba(174, 214, 241, 0.8)); /* Light Blue Gradient */
   color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
 }
 
 #CareCompanion h1 {
@@ -68,6 +69,21 @@ section {
   margin-top: 20px;
   font-weight: 300;
 }
+
+.hero-image {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Hover Effect on CareCompanion */
+#CareCompanion:hover {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 1), rgba(174, 214, 241, 1)); /* Darker blue on hover */
+}
+
+/* Rest of the CSS remains the same */
+
 
 .hero-image {
   width: 80%;

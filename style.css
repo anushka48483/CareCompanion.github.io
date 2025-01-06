@@ -69,6 +69,13 @@ section {
   font-weight: 300;
 }
 
+.hero-image {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
 /* Portfolio Section */
 #Portfolio {
   background-color: #fff;
@@ -122,6 +129,13 @@ section {
   font-size: 1.2em;
   color: #7f8c8d;
   margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 /* Links Section */
@@ -191,6 +205,9 @@ footer {
   #Portfolio .skills h3 {
     font-size: 1.6em;
   }
+
+  .hero-image, .project-image {
+    width: 100%;
+    max-width: 100%;
+  }
 }
-
-

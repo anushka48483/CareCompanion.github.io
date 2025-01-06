@@ -6,7 +6,7 @@
 ### Hello, I'm [Anushka Singh] 👋
 
 ✨ Highlights
-🌟 Fun Fact: When I’m not coding, you’ll find me exploring AR/VR realms or contributing to open-source projects!
+🌟 Fun Fact: When I’m not coding, you’ll find me exploring AR/VR realms or contributing to open-source projects!<br>
 🎯 Goal: Build tools that inspire collaboration, simplify processes, and solve real problems
 
 ## 🛠️ Projects
@@ -23,9 +23,9 @@
 
 
 ## 🚀 Skills
-💻 Programming: C++, Python, JavaScript
-🛠️ Core Expertise: Data Structures & Algorithms, OOPS,DBMS
-🌐 Development: Web Development (React.js, Node.js), WordPress
+💻 Programming: C++, Python, JavaScript <br>
+🛠️ Core Expertise: Data Structures & Algorithms, OOPS,DBMS <br>
+🌐 Development: Web Development (React.js, Node.js), WordPress  <br>
 🌀 Interests: AR/VR, Web3, Cloud Computing,UI/UX
 
 ## 🌐 Find Me Online
@@ -47,8 +47,8 @@
 <dd>Mr Shankar Biradar</dd>
 <dt>University</dt>
 <dd>KLE Dr MS Sheshgiri College of Engineering and Technology</dd>
-<dt>MedTech</dt>
-<dd>Google</dd>
+<dt>Portfolio Topic/Domain</dt>
+<dd>Medtech</dd>
 </dl>
 
 <br> 

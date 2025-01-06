@@ -61,6 +61,7 @@ section {
 #CareCompanion h1 {
   font-size: 3.5em;
   margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 #CareCompanion p {
@@ -75,21 +76,17 @@ section {
   max-width: 800px;
   margin-top: 20px;
   border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
 }
 
 /* Hover Effect on CareCompanion */
 #CareCompanion:hover {
   background: linear-gradient(135deg, rgba(52, 152, 219, 1), rgba(174, 214, 241, 1)); /* Darker blue on hover */
-}
-
-/* Rest of the CSS remains the same */
-
-
-.hero-image {
-  width: 80%;
-  max-width: 800px;
-  margin-top: 20px;
-  border-radius: 10px;
 }
 
 /* Portfolio Section */
@@ -98,17 +95,19 @@ section {
   padding: 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #Portfolio:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 #Portfolio h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
   color: #2d3e50;
+  text-align: center;
 }
 
 #Portfolio .highlights h3,
@@ -117,6 +116,8 @@ section {
   font-size: 1.8em;
   margin-bottom: 10px;
   color: #e74c3c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #Portfolio ul {
@@ -152,6 +153,11 @@ section {
   max-width: 700px;
   margin-top: 20px;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
 }
 
 /* Links Section */
@@ -164,11 +170,15 @@ section {
   font-size: 1.3em;
   margin: 0 15px;
   color: #e74c3c;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 #FindMeOnline a:hover {
-  color: #3498db;
-  text-decoration: underline;
+  color: #fff;
+  background-color: #3498db;
+  text-decoration: none;
 }
 
 /* Portfolio Topic Section */
@@ -200,6 +210,9 @@ footer {
   margin-top: 40px;
   font-style: italic;
   color: #7f8c8d;
+  background-color: #e8f1f7;
+  padding: 15px 0;
+  border-radius: 5px;
 }
 
 /* Media Queries for responsiveness */
@@ -226,4 +239,9 @@ footer {
     width: 100%;
     max-width: 100%;
   }
+
+  #FindMeOnline a {
+    font-size: 1.1em;
+  }
 }
+

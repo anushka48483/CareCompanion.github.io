@@ -3,110 +3,112 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f8fa;
+  background-color: #f3f6f9;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
-  color: #2d3e50;
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+  text-transform: capitalize;
 }
 
 a {
-  color: #e74c3c;
+  color: #16a085;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #3498db;
+  color: #1abc9c;
   text-decoration: underline;
 }
 
 footer blockquote {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bold;
   color: #7f8c8d;
   font-style: italic;
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background-color: #e8f1f7;
+  background-color: #eaf7f6;
   border-radius: 5px;
 }
 
 /* Container and Layout */
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
-/* CareCompanion Section with Light Blue Gradient */
+/* CareCompanion Section with Gradient */
 #CareCompanion {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, rgba(52, 152, 219, 0.8), rgba(174, 214, 241, 0.8)); /* Light Blue Gradient */
+  padding: 80px 30px;
+  background: linear-gradient(145deg, #2c3e50, #16a085); /* Green-Blue Gradient */
   color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: background 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.4s ease;
 }
 
 #CareCompanion h1 {
-  font-size: 3.5em;
+  font-size: 3.2em;
   margin-bottom: 20px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 #CareCompanion p {
-  font-size: 1.3em;
+  font-size: 1.4em;
   line-height: 1.8;
   margin-top: 20px;
   font-weight: 300;
 }
 
 .hero-image {
-  width: 80%;
-  max-width: 800px;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  width: 85%;
+  max-width: 850px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
 }
 
 .hero-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Hover Effect on CareCompanion */
 #CareCompanion:hover {
-  background: linear-gradient(135deg, rgba(52, 152, 219, 1), rgba(174, 214, 241, 1)); /* Darker blue on hover */
+  background: linear-gradient(145deg, #1abc9c, #16a085); /* Darker Gradient */
 }
 
 /* Portfolio Section */
 #Portfolio {
   background-color: #fff;
-  padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
+  padding: 50px 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #Portfolio:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 #Portfolio h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #2d3e50;
+  font-size: 2.8em;
+  margin-bottom: 25px;
+  color: #34495e;
   text-align: center;
 }
 
@@ -114,20 +116,19 @@ section {
 #Portfolio .projects h3,
 #Portfolio .skills h3 {
   font-size: 1.8em;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #e74c3c;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 #Portfolio ul {
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 #Portfolio ul li {
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #34495e;
 }
 
@@ -137,40 +138,40 @@ section {
 }
 
 #Portfolio .projects h4 {
-  font-size: 1.6em;
+  font-size: 1.7em;
   color: #3498db;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 #Portfolio .projects p {
   font-size: 1.2em;
   color: #7f8c8d;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .project-image {
   width: 100%;
-  max-width: 700px;
+  max-width: 750px;
   margin-top: 20px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
 }
 
 .project-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Links Section */
 #FindMeOnline {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 #FindMeOnline a {
-  font-size: 1.3em;
-  margin: 0 15px;
+  font-size: 1.4em;
+  margin: 0 20px;
   color: #e74c3c;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -183,36 +184,36 @@ section {
 
 /* Portfolio Topic Section */
 dl {
-  padding: 20px;
+  padding: 25px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
 }
 
 dt {
   font-weight: bold;
   color: #3498db;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 dd {
   margin: 5px 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #7f8c8d;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Footer Quote */
 footer {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin-top: 40px;
   font-style: italic;
   color: #7f8c8d;
   background-color: #e8f1f7;
-  padding: 15px 0;
-  border-radius: 5px;
+  padding: 20px 0;
+  border-radius: 6px;
 }
 
 /* Media Queries for responsiveness */
@@ -222,11 +223,11 @@ footer {
   }
 
   #CareCompanion h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
 
   #Portfolio h2 {
-    font-size: 2em;
+    font-size: 2.4em;
   }
 
   #Portfolio .highlights h3,
@@ -241,7 +242,8 @@ footer {
   }
 
   #FindMeOnline a {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
+
 

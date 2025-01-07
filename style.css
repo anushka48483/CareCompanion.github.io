@@ -18,11 +18,33 @@ a {
   color: #16a085;
   text-decoration: none;
   font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: color 0.3s;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 120%;
+  height: 120%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: transform 0.5s;
 }
 
 a:hover {
   color: #1abc9c;
-  text-decoration: underline;
+}
+
+a:hover::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 footer blockquote {
@@ -49,14 +71,27 @@ section {
 }
 
 /* CareCompanion Section with Gradient */
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(145deg, #2c3e50, #16a085);
+  }
+  50% {
+    background: linear-gradient(145deg, #1abc9c, #27ae60);
+  }
+  100% {
+    background: linear-gradient(145deg, #2c3e50, #16a085);
+  }
+}
+
 #CareCompanion {
   text-align: center;
   padding: 80px 30px;
-  background: linear-gradient(145deg, #2c3e50, #16a085); /* Green-Blue Gradient */
+  background: linear-gradient(145deg, #2c3e50, #16a085);
   color: #fff;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: background 0.4s ease;
+  animation: gradientShift 8s infinite;
 }
 
 #CareCompanion h1 {
@@ -84,11 +119,6 @@ section {
 
 .hero-image:hover {
   transform: scale(1.1);
-}
-
-/* Hover Effect on CareCompanion */
-#CareCompanion:hover {
-  background: linear-gradient(145deg, #1abc9c, #16a085); /* Darker Gradient */
 }
 
 /* Portfolio Section */
@@ -189,6 +219,11 @@ dl {
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   margin-top: 35px;
+  transition: box-shadow 0.3s ease;
+}
+
+dl:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 dt {
@@ -216,7 +251,42 @@ footer {
   border-radius: 6px;
 }
 
-/* Media Queries for responsiveness */
+/* Micro-Animations */
+.hero-image:hover, .project-image:hover {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Typing Effect */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  animation: typing 3.5s steps(40, end), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .container {
     width: 90%;
@@ -245,5 +315,3 @@ footer {
     font-size: 1.2em;
   }
 }
-
-
